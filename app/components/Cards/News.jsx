@@ -1,14 +1,11 @@
 import Link from 'next/link';
 
-const News = () => {
+const News = ({ title, image, type, time }) => {
     return (
         <>
-            <div className='card lg:card-side shadow-xl w-2/4 text-white'>
+            <div className='card lg:card-side shadow-xl text-white'>
                 <figure className='relative'>
-                    <img
-                        src='https://www.mancity.com/meta/media/4dsjzrqe/new-wide.jpg?width=291&height=164&mode=crop'
-                        alt='thumbnail'
-                    />
+                    <img src={image} alt='thumbnail' />
                     <Link href='https://www.mancity.com/citytv/mens/manchester-city-v-west-ham-tunnel-cam-63818811'>
                         <div className='absolute text-red-500 left-[48%] top-[44%] w-fit h-fit'>
                             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' className='w-8'>
@@ -19,15 +16,13 @@ const News = () => {
                 </figure>
                 <div className='card-body py-0 px-4'>
                     <Link href='https://www.mancity.com/citytv/mens/manchester-city-v-west-ham-tunnel-cam-63818811'>
-                        <h2 className='card-title hover:text-primary transition-colors text-2xl'>
-                            City v West Ham: Tunnel Cam
-                        </h2>
+                        <h2 className='card-title hover:text-primary transition-colors text-2xl'>{title}</h2>
                     </Link>
                     <div>
                         <time>
-                            <small className='bg-[#dde6ed] text-black font-semibold mr-8 p-[1px]'>09:26</small>
+                            <small className='bg-[#dde6ed] text-black font-semibold mr-8 p-[1px]'>{time}</small>
                         </time>
-                        <span>BEHIND THE SCENES</span>
+                        <span>{type}</span>
                     </div>
                 </div>
             </div>

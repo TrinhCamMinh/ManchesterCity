@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <body className={poppins.className}>
-                <main className='container my-8'>{children}</main>
+                <main className='container px-4 py-8'>{children}</main>
                 <BottomNavigate />
             </body>
         </html>

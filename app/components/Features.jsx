@@ -8,7 +8,7 @@ const heading = ['EDS', 'Men', 'Women', 'Academy'];
 const Features = () => {
     return (
         <>
-            <div className='bg-primary w-1/3 text-white rounded'>
+            <div className='bg-primary text-white rounded'>
                 <ul className='p-4 heading flex justify-between bg-[#f3f6f9] text-black text-center rounded'>
                     {heading.map((item) => {
                         return (

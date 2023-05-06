@@ -25,13 +25,13 @@ A first **NextJS 13** project which was build by Mr. Trinh Cam Minh. With the lo
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/TrinhCamMinh/ManchesterCity.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd manchester-city
 ```
 
 Install dependencies
